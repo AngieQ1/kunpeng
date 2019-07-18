@@ -1,0 +1,23 @@
+{
+    "target":"web",
+    "meta":{
+        "name":    "swagger-ui未授权访问",
+        "remarks": "存在swagger-ui未授权访问漏洞",
+        "level":   3,
+        "type":    "信息泄漏",
+        "author":   "aqq",
+        "references": {
+            "url":"",
+            "cve":"",
+            "kpid":"KP-0052"
+        }
+    },
+    "request":{
+        "path":     "/swagger-ui.html",
+        "postData": ""
+    },
+    "verify":{
+        "type":  "string",
+        "match": "Swagger UI"
+    }
+}
